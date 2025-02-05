@@ -4,6 +4,38 @@ import { useState, useEffect } from "react";
 
 export default function Nav() {
     const [activeHash, setActiveHash] = useState('#home');
+
+    useEffect(() => {
+        const sections = ['home', 'about', 'committee', 'dates', 'regfees', 'contact'];
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-50% 0px',
+            threshold: 0
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveHash('#' + entry.target.id);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        sections.forEach(section => {
+            const element = document.getElementById(section);
+            if (element) observer.observe(element);
+        });
+
+        return () => {
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) observer.unobserve(element);
+            });
+        };
+    }, []);
     const handleScroll = (e, hash) => {
         e.preventDefault();
         setActiveHash(hash);
