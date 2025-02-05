@@ -5,7 +5,7 @@ import ursa from "../../public/ursa.webp";
 
 export default function Header() {
   return (
-    <header id="home" className="bg-white dark:bg-1/6">
+    <header className="fixed top-0 left-0 right-0 bg-white dark:bg-1/6">
         <div className="flex h-32 justify-between items-center px-6 py-6">
             <div className="flex flex-col items-center">
                 <h1 className="font-extrabold antialiased text-4xl">URSA 2025</h1>

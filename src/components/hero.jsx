@@ -3,7 +3,7 @@ import nitp from "../../public/nitp.webp";
 
 export default function Hero() {
   return (
-    <div className="hero overflow-hidden h-full">
+    <div id="home" className="bg-white daro overflow-hidden h-full">
         <Image
             src={nitp}
             alt="nitp"
