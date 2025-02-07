@@ -20,7 +20,7 @@ export default function Home() {
     }, [pathname]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full py-2">
+    <div className="flex flex-col items-center justify-center h-full py-2 ">
         <Hero />
         <About />
         <Contact />
