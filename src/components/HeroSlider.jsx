@@ -21,6 +21,15 @@ export default function HeroSlider() {
 
     return (
         <div className="relative w-full h-screen overflow-hidden">
+            <div className="absolute inset-0 bg-black/40 flex  items-end  text-white z-10">
+                <div className=" w-full flex items-center text-center">
+                    <Image src={ursa} alt="Ursa" height={300} width={300} className="mb-4" />
+                    <div className="flex flex-col items-start">
+                        <h1 className="text-3xl md:text-4xl font-bold text-start text-balance">2025 International Conference on Urban Resilience and Sustainable Architecture</h1>
+                        <p className="text-lg md:text-xl mt-2">National Institute of Technology, Patna</p>
+                    </div>
+                </div>
+            </div>
             {/* Swiper Hero Slider inside the existing div */}
             <Swiper
                 spaceBetween={0}
@@ -42,17 +51,11 @@ export default function HeroSlider() {
                                     fill
                                     style={{ objectFit: "cover" }}
                                     priority
+                                    className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
                                 />
+                                <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent to-35%"></div>
                             </div>
-                            <div className="absolute inset-0 bg-black/40 flex  items-end  text-white ">
-                            <div className=" w-full flex items-center text-center">
-                                <Image src={ursa} alt="Ursa" height={300} width={300} className="mb-4" />
-                                <div className="flex flex-col items-start">
-                                    <h1 className="text-3xl md:text-4xl font-bold text-start text-balance">2025 International Conference on Urban Resilience and Sustainable Architecture</h1>
-                                    <p className="text-lg md:text-xl mt-2">National Institute of Technology, Patna</p>
-                                </div>
-                            </div>
-                            </div>
+
                         </div>
                     </SwiperSlide>
                 ))}

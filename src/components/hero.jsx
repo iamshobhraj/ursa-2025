@@ -9,7 +9,7 @@ import HeroSlider from "./HeroSlider";
 
 export default function Hero() {
   const images=[
-    { img:nitp1, 
+    { img:nitp1,
       name:"First",
     },
     {
@@ -24,7 +24,7 @@ export default function Hero() {
   const [currImg,newImage]=useState(images[1]);
   return (
     <div id="home" className="bg-slate-500 daro overflow-hidden h-full w-full">
-      
+
         <HeroSlider/>
     </div>
   );
