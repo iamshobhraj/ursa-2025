@@ -1,13 +1,10 @@
 export default function Contact() {
   return (
-    <div id="contact" className="bg-red-400 dark:text-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="block">Contact</span>
-          </h2>
-        </div>
-      </div>
+    <div id="contact" className="flex flex-col mx-4 h-[80vh] border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-2">
+      <h1 className='text-xl font-semibold mx-auto md:text-2xl lg:text-3xl'>Contact</h1>
+      <p className='font-normal text-sm text-justify p-2 text-slate-600 lg:text-base'>
+        The International Conference on “Urban Resilience and Sustainable Architecture” aims to convene distinguished academicians, scientists, professionals, researchers and students to communicate and disseminate their research findings and experiences regarding aspects of Urban Resilience and Sustainable Architecture. It also offers a prominent interdisciplinary forum to present and discuss the most recent innovations, trends, concerns, practical challenges encountered and solutions adopted in Urban Resilience and Sustainable Architecture.
+      </p>
     </div>
   );
 }
