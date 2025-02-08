@@ -1,8 +1,7 @@
-
-function Call() {
-  return (
-    <div>call</div>
-  )
+export default function Call() {
+    return (
+        <div id="call" className="">
+            call
+        </div>
+    )
 }
-
-export default Call

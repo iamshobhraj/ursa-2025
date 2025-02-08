@@ -20,7 +20,7 @@ export default function HeroSlider() {
     ];
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[95vh] lg:h-screen overflow-hidden">
             <div className="absolute inset-0 bg-black/40 flex  items-end  text-white z-10">
                 <div className="w-full flex sm:items-center items-start flex-col sm:flex-row text-center sm:mb-0 mb-28">
                     <Image src={ursa} alt="Ursa" className="sm:mb-4 mb-0 lg:h-[220px] lg:w-[320px] h-[110px] w-[150px]" />
