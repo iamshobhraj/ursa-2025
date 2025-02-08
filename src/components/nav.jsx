@@ -49,7 +49,14 @@ export default function Nav({isMobile}) {
         setActiveHash(hash);
         const element = document.querySelector(hash);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const headerOffset = 160;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
     }
 
