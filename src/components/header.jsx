@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="fixed flex flex-row lg:flex-col h-24 lg:h-36 top-0 left-0 right-0 bg-white dark:bg-1/6 z-20">
-        <div className="flex h-full lg:h-[52%] justify-between items-center px-9 w-full">
+        <div className="flex h-full lg:h-[52%] justify-between items-center px-6 lg:px-9 w-full">
             <div className="flex flex-col items-center">
                 <h1 className={`antialiased text-4xl tracking-[0.2em] font-[family-name:var(--font-poppins)]`}>U<span className="text-stroke">R</span>SA</h1>
                 <div className="flex w-full justify-between items-center">
