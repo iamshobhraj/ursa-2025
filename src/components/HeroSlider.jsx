@@ -23,10 +23,10 @@ export default function HeroSlider() {
         <div className="relative w-full h-screen overflow-hidden">
             <div className="absolute inset-0 bg-black/40 flex  items-end  text-white z-10">
                 <div className="w-full flex items-center text-center">
-                    <Image src={ursa} alt="Ursa" className="mb-4 lg:h-[220px] lg:w-[320px] h-[100px] w-[100px]" />
+                    <Image src={ursa} alt="Ursa" className="mb-4 lg:h-[220px] lg:w-[320px] h-[105px] w-[110px]" />
                     <div className="flex flex-col items-start">
-                        <h1 className="text-xl sm:text-4xl font-bold text-start text-balance">2025 International Conference on Urban Resilience and Sustainable Architecture</h1>
-                        <p className="text-base sm:text-xl sm:mt-2">National Institute of Technology, Patna</p>
+                        <h1 className="text-base sm:text-4xl font-bold text-start text-balance">2025 International Conference on Urban Resilience and Sustainable Architecture</h1>
+                        <p className="text-sm sm:text-xl sm:mt-2">National Institute of Technology, Patna</p>
                     </div>
                 </div>
             </div>
