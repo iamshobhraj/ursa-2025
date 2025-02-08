@@ -40,7 +40,7 @@ export default function Header() {
                 </button>
         </div>
         {/* Mobile Navigation Menu */}
-        <div className={`lg:hidden fixed top-32 right-0 h-screen w-64 bg-white dark:bg-gray-800 transform trabsition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`lg:hidden fixed top-24 right-0 h-screen w-64 bg-white dark:bg-gray-800 transform trabsition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             <Nav isMobile={true} />
         </div>
 
