@@ -64,7 +64,7 @@ export default function Nav({isMobile}) {
         <nav className={`${isMobile ? 'flex flex-col p-4' : 'flex justify-between items-center font-semibold font-sans w-full text-lg h-full'}`}>
             <div className="hidden lg:flex justify-center items-center h-full w-1/3 border-r border-solid border-[#333333]">X</div>
             {navItems.map((item, index) => (
-                <Link key={index} href={item.href} onClick={(e) => handleScroll(e, item.href)} className={`flex items-center justify-center h-full w-full ${activeHash === item.href ? 'bg-[#333333] text-white' : 'hover:bg-[#f0eee8]'}`}>
+                <Link key={index} href={item.href} onClick={(e) => handleScroll(e, item.href)} className={`flex items-center justify-center h-16 border-b border-gray-600 lg:h-full w-full ${activeHash === item.href ? 'bg-[#333333] text-white' : 'hover:bg-[#f0eee8]'}`}>
                     {item.label}
                 </Link>
             ))}

@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed flex flex-row lg:flex-col h-24 lg:h-36 top-0 left-0 right-0 bg-white dark:bg-1/6 z-20">
+      <header className={`fixed flex flex-row lg:flex-col h-24 lg:h-36 top-0 left-0 right-0 ${isMenuOpen ? 'bg-[#e2ddcf]' : 'bg-white'} transition-all duration-300 durark:bg-1/6 z-20`}>
         <div className="flex h-full lg:h-[52%] justify-between items-center px-6 lg:px-9 w-full">
             <div className="flex flex-col items-center">
                 <h1 className={`antialiased text-4xl tracking-[0.2em] font-[family-name:var(--font-poppins)]`}>U<span className="text-stroke">R</span>SA</h1>
@@ -40,7 +40,7 @@ export default function Header() {
                 </button>
         </div>
         {/* Mobile Navigation Menu */}
-        <div className={`lg:hidden fixed top-24 right-0 h-screen w-64 bg-white dark:bg-gray-800 transform trabsition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`lg:hidden fixed top-24 right-0 h-screen w-64 bg-[#e2ddcf] transform trabsition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             <Nav isMobile={true} />
         </div>
 

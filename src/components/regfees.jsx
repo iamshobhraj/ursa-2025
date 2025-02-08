@@ -3,7 +3,7 @@ function FeesComp({ type,fees }) {
     return (
         <>
 
-            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-sm md:text-base justify-start pl-2 py-2`}>{type}</div>
+            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-base md:text-base justify-start pl-2 py-2`}>{type}</div>
             <div className="col-span-1 flex border-b border-gray-300 flex-col justify-center text-sm md:text-base pl-4 py-2">{fees}</div>
         </>
     )
@@ -43,7 +43,7 @@ export default function RegFees() {
             <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees (including GST)</div>
             <div className="col-span-1 flex flex-col justify-center font-semibold pl-4 pb-2"></div>
             <FeesComp
-            type={'1. Academician/Professional/Industry:'}
+            type={'1. Academician/ Professional/Industry:'}
             fees={'INR 7500'}
             />
             <FeesComp
