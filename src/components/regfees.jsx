@@ -1,9 +1,9 @@
-import Link from 'next/link'
+
 function FeesComp({ type,fees }) {
     return (
         <>
 
-            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-base md:text-base justify-start pl-2 py-2`}>{type}</div>
+            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-base justify-start pl-2 py-2`}>{type}</div>
             <div className="col-span-1 flex border-b border-gray-300 flex-col justify-center text-sm md:text-base pl-4 py-2">{fees}</div>
         </>
     )
