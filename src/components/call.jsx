@@ -15,8 +15,8 @@ const List=({items})=>{
 }
 export default function Call() {
     return (
-        <div id="call" className="flex flex-col mx-4 border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-2">
-            <h1 className='text-2xl font-semibold mx-auto lg:text-5xl'>Call for Papers</h1>
+        <div id="call" className="flex flex-col mx-4 border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-2 pt-6">
+            <h1 className='text-2xl font-semibold mx-auto lg:text-4xl'>Call for Papers</h1>
         <div className='p-8'>
         <p className='py-3'>
            <span className='font-semibold'>Abstract may be submitted through following Google form: </span>
@@ -58,9 +58,9 @@ export default function Call() {
                 'Adaptive reuse strategies for buildings and urban infrastructure',
                 'Waste reduction, recycling technologies, and material efficiency in construction',
                 'Policies and governance models fostering sustainable development',
-                'Technological Innovations Supporting Circular Urbanism', 
+                'Technological Innovations Supporting Circular Urbanism',
                 'Community involvement and its impact on sustainable urban practices',
-                
+
         ]}/>
         <p className='py-6 font-semibold'>
             Note: The themes are not limited to the listed ones.

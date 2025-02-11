@@ -1,7 +1,7 @@
 export default function Committee() {
     return (
         <div id="committee" className="flex flex-col gap-4 mx-4 h-full border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-4 p-6">
-            <h1 className='text-xl font-semibold mx-auto md:text-2xl lg:text-3xl mb-4'>Committee</h1>
+            <h1 className='text-2xl font-semibold mx-auto lg:text-4xl pb-6 lg:mb-6'>Committee</h1>
             <div className="flex gap-4 flex-col">
                 <h1 className="sm:text-2xl text-xl font-bold border border-black pl-2">Patron:</h1>
                 <div className="text-lg text-wrap border-b border-gray-300">Prof. (Dr.) P. K. Jain, Director, National Institute of Technology Patna</div>

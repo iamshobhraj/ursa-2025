@@ -11,7 +11,7 @@ function FeesComp({ type,fees }) {
 export default function RegFees() {
     return (
         <div id="regfees" className="flex flex-col mx-4 border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 p-8">
-            <h1 className='text-2xl font-semibold mx-auto lg:text-5xl'>Registration Fees</h1>
+            <h1 className='text-2xl font-semibold mx-auto lg:text-4xl'>Registration Fees</h1>
         <div>
         <p className='mt-14 text-xl border border-black pl-2 font-bold'>
             International Delegates:

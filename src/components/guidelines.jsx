@@ -1,7 +1,7 @@
 export default function Guidelines() {
   return (
-    <div id="guidelines" className="flex flex-col gap-2 mx-4 h-full border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-4 p-2">
-      <h1 className='text-xl font-semibold mx-auto md:text-2xl lg:text-3xl mt-2'>Submission Guidelines</h1>
+    <div id="guidelines" className="flex flex-col gap-2 mx-4 h-full border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 md:p-6 sm:p-4 p-2 pt-6">
+      <h1 className='text-2xl font-semibold mx-auto lg:text-4xl'>Submission Guidelines</h1>
       <div className="flex flex-col text-wrap gap-2 mt-9">
         <h1 className="sm:text-2xl text-xl font-bold border border-black pl-2">Abstraction Submission</h1>
         <ul className="sm:text-lg list-disc p-5">
