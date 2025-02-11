@@ -1,9 +1,9 @@
-import Link from 'next/link'
+
 function FeesComp({ type,fees }) {
     return (
         <>
 
-            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-sm md:text-base justify-start pl-2 py-2`}>{type}</div>
+            <div className={`col-span-2 border-b border-gray-300 flex flex-col text-base justify-start pl-2 py-2`}>{type}</div>
             <div className="col-span-1 flex border-b border-gray-300 flex-col justify-center text-sm md:text-base pl-4 py-2">{fees}</div>
         </>
     )
@@ -11,7 +11,7 @@ function FeesComp({ type,fees }) {
 export default function RegFees() {
     return (
         <div id="regfees" className="flex flex-col mx-4 border-2 rounded-lg bg-slate-100 my-8 sm:mx-6 lg:mx-20 lg:mt-12 p-8">
-            <h1 className='text-xl font-semibold mx-auto md:text-2xl lg:text-3xl'>Registration Fees</h1>
+            <h1 className='text-2xl font-semibold mx-auto lg:text-4xl'>Registration Fees</h1>
         <div>
         <p className='mt-14 text-xl border border-black pl-2 font-bold'>
             International Delegates:
@@ -43,7 +43,7 @@ export default function RegFees() {
             <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees (including GST)</div>
             <div className="col-span-1 flex flex-col justify-center font-semibold pl-4 pb-2"></div>
             <FeesComp
-            type={'1. Academician/Professional/Industry:'}
+            type={'1. Academician/ Professional/Industry:'}
             fees={'INR 7500'}
             />
             <FeesComp
