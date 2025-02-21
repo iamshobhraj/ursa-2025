@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Geist, Geist_Mono, Poppins, Titan_One } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
