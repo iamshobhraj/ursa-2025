@@ -17,65 +17,65 @@ export default function RegFees() {
             International Delegates:
         </p>
         <div className="grid grid-cols-3 mt-8">
-            <div className="col-span-2 flex flex-col justify-center font-semibold text-lg  pl-4 py-2">Registration Fees (including GST)</div>
+            <div className="col-span-2 flex flex-col justify-center font-semibold text-lg  pl-4 py-2">Registration Fees </div>
             <div className="col-span-1 flex flex-col justify-center font-semibold pl-4 py-2"></div>
             <FeesComp
             type={'1. International Delegate:'}
-            fees={'USD 250'}
+            fees={'USD 250 + 18% GST'}
             />
             <FeesComp
             type={'2. International Student'}
-            fees={'USD 100'}
+            fees={'USD 100 + 18% GST'}
             />
             <FeesComp
             type={'3. SAARC & Developing Countries Delegate'}
-            fees={'USD 150'}
+            fees={'USD 150 + 18% GST'}
             />
             <FeesComp
             type={'4. SAARC & Developing Countries Student'}
-            fees={'USD 50'}
+            fees={'USD 50 + 18% GST'}
             />
         </div>
         <p className='mt-14 pl-2 text-xl border border-black font-bold'>
             National Delegates:
         </p>
         <div className="grid grid-cols-3 mt-8">
-            <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees (including GST)</div>
+            <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees</div>
             <div className="col-span-1 flex flex-col justify-center font-semibold pl-4 pb-2"></div>
             <FeesComp
             type={'1. Academician/ Professional/Industry:'}
-            fees={'INR 7500'}
+            fees={'INR 7500 + 18% GST'}
             />
             <FeesComp
             type={'2. Research Scholar'}
-            fees={'INR 3000'}
+            fees={'INR 3000 + 18% GST'}
             />
             <FeesComp
             type={'3. PG Student'}
-            fees={'INR 2000'}
+            fees={'INR 2000 + 18% GST'}
             />
             <FeesComp
             type={'4. UG Student'}
-            fees={'INR 1500'}
+            fees={'INR 1500 + 18% GST'}
             />
         </div>
         <p className='mt-14 pl-2 text-xl border border-black font-bold'>
             Guest Delegates:
         </p>
         <div className="grid grid-cols-3 mt-8">
-            <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees (including GST)</div>
+            <div className="col-span-2 flex flex-col justify-center text-lg  font-semibold pl-4 pb-2">Registration Fees</div>
             <div className="col-span-1 flex flex-col justify-center font-semibold pl-4 pb-2"></div>
             <FeesComp
-            type={'1. Guest Registration With Kit'}
-            fees={'INR 3000'}
+            type={'1. Guest Registration with Kit'}
+            fees={'INR 3000 + 18% GST'}
             />
             <FeesComp
-            type={'2. Guest Registration Without Kit'}
-            fees={'INR 1500'}
+            type={'2. Guest Registration without Kit'}
+            fees={'INR 1500 + 18% GST'}
             />
             <FeesComp
             type={'3. Guest Registration without Kit '}
-            fees={'USD 50'}
+            fees={'USD 50 + 18% GST'}
             />
         </div>
         <p className='mt-14 pl-2 text-xl border border-black font-bold'>

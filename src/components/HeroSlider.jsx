@@ -25,8 +25,8 @@ export default function HeroSlider() {
                 <div className="w-full flex sm:items-center items-start flex-col sm:flex-row text-center sm:mb-0 mb-28">
                     <Image src={ursa} alt="Ursa" className="sm:mb-4 mb-0 lg:h-[220px] lg:w-[320px] h-[110px] w-[150px]" />
                     <div className="flex flex-col items-start pl-4 sm:pl-0">
-                        <h1 className="text-xl sm:text-4xl font-bold text-start text-balance">2025 International Conference on Urban Resilience and Sustainable Architecture</h1>
-                        <p className="text-base sm:text-xl sm:mt-2">National Institute of Technology, Patna</p>
+                        <h1 className="text-xl sm:text-4xl font-bold text-start text-balance">International Conference on Urban Resilience and Sustainable Architecture 2025</h1>
+                        <p className="text-base sm:text-xl sm:mt-2">National Institute of Technology Patna</p>
                     </div>
                 </div>
             </div>
