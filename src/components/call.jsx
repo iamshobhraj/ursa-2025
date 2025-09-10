@@ -26,7 +26,7 @@ export default function Call() {
             <span className='font-semibold'>Template for Abstract </span><Link href="https://docs.google.com/document/d/1-pcZivK41ABcMK0IOtcRjLLAd4BVypGO/edit?usp=sharing&ouid=103562460999404586283&rtpof=true&sd=true" target="_blank" className='text-blue-500'>Link</Link>
         </p>
         <p className='pb-6'>
-            <span className='font-semibold'>Template for Paper </span><Link href="#" target="_blank" className='text-blue-500'>Link</Link>
+            <span className='font-semibold'>Template for Paper </span><Link href="https://docs.google.com/document/d/1NL8_Wfubs-ZdD6Tl4FjQC75UoNmPcTkZ/edit?usp=sharing&ouid=103562460999404586283&rtpof=true&sd=true" target="_blank" className='text-blue-500'>Link</Link>
         </p>
         <p className='py-2 text-2xl'>
         The theme of the conference:
