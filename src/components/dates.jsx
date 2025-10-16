@@ -5,7 +5,7 @@ export default function Dates() {
             <ul>
                 <li className="bg-slate-300 p-2"><span className="text-lg font-medium">Abstract Submission Deadline: </span><span> October 15, 2025</span></li>
                 <li className="p-2"><span className="text-lg font-medium">Notification of Acceptance/Rejection: </span><span>Within 15 days of Abstract/full-text paper</span></li>
-                <li className="bg-slate-300 p-2"><span className="text-lg font-medium">Registration Deadline: </span><span>October 15, 2025</span></li>
+                <li className="bg-slate-300 p-2"><span className="text-lg font-medium">Registration Deadline: </span><span>November 10, 2025</span></li>
                 <li className="p-2"><span className="text-lg font-medium">Conference Dates: </span><span>November 15-16, 2025</span></li>
                 <li className="bg-slate-300 p-2"><span className="text-lg font-medium">Full Paper Submission for Book Chapter: </span><span>December 15, 2025</span></li>
             </ul>
