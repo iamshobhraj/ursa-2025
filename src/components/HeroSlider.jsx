@@ -11,16 +11,18 @@ import nitp1 from "../../public/nitp.webp";
 import nitp2 from "../../public/nit-patna-006.jpg";
 import nitp3 from "../../public/nit-patna-009.jpg";
 import ursa from "../../public/ursa.png";
-
+import banner from "../../public/banner.jpg";
 export default function HeroSlider() {
     const images = [
-        { img: nitp1, name: "First" },
-        { img: nitp2, name: "Second" },
-        { img: nitp3, name: "Third" },
+        { img: banner, name: "First" },
+        { img: nitp1, name: "Second" },
+        { img: nitp2, name: "Third" },
+        { img: nitp3, name: "Fourth" },
+        
     ];
 
     return (
-        <div className="relative w-full h-[95vh] lg:h-screen overflow-hidden">
+        <div className="relative w-full h-[95vh] lg:h-screen overflow-hidden md:mt-32 mt-20">
             <div className="absolute inset-0 bg-black/40 flex  items-end  text-white z-10">
                 <div className="w-full flex sm:items-center items-start flex-col sm:flex-row text-center sm:mb-0 mb-28">
                     <Image src={ursa} alt="Ursa" className="sm:mb-4 mb-0 lg:h-[220px] lg:w-[320px] h-[110px] w-[150px]" />
@@ -49,7 +51,7 @@ export default function HeroSlider() {
                                     src={item.img}
                                     alt={item.name}
                                     fill
-                                    style={{ objectFit: "cover" }}
+                                    style={{ objectFit: "contains" }}
                                     priority
                                     className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
                                 />
