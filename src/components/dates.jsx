@@ -9,20 +9,6 @@ export default function Dates() {
                 <li className="p-2"><span className="text-lg font-medium">Conference Dates: </span><span>November 15-16, 2025</span></li>
                 <li className="bg-slate-300 p-2"><span className="text-lg font-medium">Full Paper Submission for Book Chapter: </span><span>December 15, 2025</span></li>
             </ul>
-            
-            {/* Updated styling for the bottom div */}
-            <div className="mt-auto w-full p-4 rounded-md text-center">
-                <p className="text-md font-medium">
-                    Looking for the complete timeline?{' '}
-                    <a 
-                        href="https://drive.google.com/file/d/1zscT1FLQVb4iZJxqKp3N5FVuedhXwvQo/view?usp=drive_link" 
-                        target="_blank" 
-                        className="underline underline-offset-4 font-bold"
-                    >
-                        Download Full Schedule
-                    </a>
-                </p>
-            </div>
         </div>
     )
 }
