@@ -7,6 +7,10 @@ export default function Committee() {
                 <div className="text-lg text-wrap border-b border-gray-300"><strong>Prof. (Dr.) P. K. Jain</strong>, Director, National Institute of Technology Patna</div>
             </div>
             <div className="flex gap-4 flex-col">
+                <h1 className="sm:text-2xl text-xl border border-black pl-2">Head of the Department:</h1>
+                <div className="text-lg text-wrap border-b border-gray-300"><strong>Dr. Shailendra K. Mandal</strong>, Department of Architecture & Planning, National Institute of Technology Patna</div>
+            </div>
+            <div className="flex gap-4 flex-col">
                 <h1 className="sm:text-2xl text-xl border border-black pl-2">Chairman:</h1>
                 <div className="text-lg text-wrap border-b border-gray-300"><strong>Prof. (Dr.) Fulena Rajak</strong>, Department of Architecture & Planning, National Institute of Technology Patna</div>
             </div>
