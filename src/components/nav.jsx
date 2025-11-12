@@ -18,6 +18,7 @@ export default function Nav({isMobile}) {
         {label: 'ABOUT', href: '#about'},
         {label: 'COMMITTEE', href: '#committee'},
         {label: 'IMPORTANT DATES', href: '#dates'},
+        {label: 'SCHEDULE', href: '#schedule'},
         {label: 'REGISTRATION FEES', href: '#regfees'},
         {label: 'GUIDELINES', href: '#guidelines'},
         {label: 'CALL FOR PAPERS', href: '#call'},

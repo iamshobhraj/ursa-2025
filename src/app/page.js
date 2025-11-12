@@ -6,6 +6,7 @@ import Contact from "../components/contact";
 import Call from "../components/call";
 import Committee from "@/components/committee";
 import Image from "next/image";
+import Schedule from "@/components/schedule";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Dates from "@/components/dates";
@@ -30,6 +31,7 @@ export default function Home() {
         <About />
         <Committee />
         <Dates />
+        <Schedule />
         <RegFees />
         <Guidelines />
         <Call/>
