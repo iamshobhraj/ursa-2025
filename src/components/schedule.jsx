@@ -37,8 +37,10 @@ export default function Schedule() {
 
             {/* ================= DAY 1 TABLE ================= */}
             {activeDay === 1 && (
-                <div className="overflow-x-auto border border-slate-400 rounded-md bg-white shadow-sm">
-                    <table className="w-full border-collapse min-w-[1000px]">
+                // Removed overflow-x-auto as the table will now wrap
+                <div className="border border-slate-400 rounded-md bg-white shadow-sm">
+                    {/* Removed min-w-[1000px] to allow table to be responsive */}
+                    <table className="w-full border-collapse">
                         <thead>
                             <tr className="bg-slate-200 text-slate-800">
                                 <th className="border border-slate-400 p-3 w-32 text-center">Time</th>
@@ -72,19 +74,25 @@ export default function Schedule() {
                                 <td className="border border-slate-400 p-3 font-bold text-center bg-slate-50 align-top">12:15 - 13:30</td>
                                 <td className="p-0 border border-slate-400">
                                     <table className="w-full h-full">
-                                        <thead>
+                                        {/* Hide table header on mobile, show on medium and up */}
+                                        <thead className="hidden md:table-header-group">
                                             <tr className="bg-slate-100 text-sm">
-                                                {/* Offline First, Wider Width (40%) */}
                                                 <th className="border-r border-b border-slate-300 p-2 w-[40%] bg-orange-50 text-slate-900">Offline Session (Visvesvaraya Hall)</th>
                                                 <th className="border-r border-b border-slate-300 p-2 w-[20%] bg-blue-50 text-slate-700">Track A (Online)</th>
                                                 <th className="border-r border-b border-slate-300 p-2 w-[20%] bg-blue-50 text-slate-700">Track B (Online)</th>
                                                 <th className="border-b border-slate-300 p-2 w-[20%] bg-blue-50 text-slate-700">Track C (Online)</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="border-r border-slate-300 p-3 align-top bg-orange-50/20">
-                                                    
+                                        {/* Use flex-col on mobile to stack items, revert to table-row-group on medium up */}
+                                        <tbody className="flex flex-col md:table-row-group">
+                                            {/* Use flex-col on mobile to stack items, revert to table-row on medium up */}
+                                            <tr className="flex flex-col md:table-row">
+                                                {/* Make each cell full width on mobile, and stack. Revert to original % width on medium up. */}
+                                                {/* Add mobile-only header to not lose data. */}
+                                                <td className="p-3 align-top bg-orange-50/20 w-full md:w-[40%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-900">Offline Session (Visvesvaraya Hall)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-187: Monika Garg',
                                                         'URSA-197: Priya Priyadarshni',
@@ -94,14 +102,22 @@ export default function Schedule() {
                                                         'URSA-230: Aadrika Prabhashakar'
                                                     ]} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
-                                                    
+                                                <td className="p-3 align-top w-full md:w-[20%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track A (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={['URSA-105', 'URSA-107', 'URSA-109', 'URSA-110', 'URSA-111', 'URSA-112']} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[20%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track B (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={['URSA-206', 'URSA-207', 'URSA-209', 'URSA-210', 'URSA-213', 'URSA-218']} />
                                                 </td>
-                                                <td className="p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[20%]">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track C (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-260', 'URSA-261', 'URSA-262', 'URSA-263', 'URSA-264', 'URSA-265'
                                                     ]} />
@@ -134,7 +150,7 @@ export default function Schedule() {
                                 <td className="border border-slate-400 p-3 font-bold text-center bg-slate-50 align-top">15:45 - 17:00</td>
                                 <td className="p-0 border border-slate-400">
                                     <table className="w-full h-full">
-                                        <thead>
+                                        <thead className="hidden md:table-header-group">
                                             <tr className="bg-slate-100 text-sm">
                                                 <th className="border-r border-b border-slate-300 p-2 w-[40%] bg-orange-50 text-slate-900">Offline Session (Visvesvaraya Hall)</th>
                                                 <th className="border-r border-b border-slate-300 p-2 w-[20%] bg-blue-50 text-slate-700">Track A (Online)</th>
@@ -142,10 +158,12 @@ export default function Schedule() {
                                                 <th className="border-b border-slate-300 p-2 w-[20%] bg-blue-50 text-slate-700">Track C (Online)</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="border-r border-slate-300 p-3 align-top bg-orange-50/20">
-                                                    
+                                        <tbody className="flex flex-col md:table-row-group">
+                                            <tr className="flex flex-col md:table-row">
+                                                <td className="p-3 align-top bg-orange-50/20 w-full md:w-[40%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-900">Offline Session (Visvesvaraya Hall)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-236: Sriya Mitra',
                                                         'URSA-238: Srija Sarkar',
@@ -154,14 +172,22 @@ export default function Schedule() {
                                                         'URSA-272: MD Farhan'
                                                     ]} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
-                                                    
+                                                <td className="p-3 align-top w-full md:w-[20%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track A (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={['URSA-116', 'URSA-117', 'URSA-119', 'URSA-121', 'URSA-124']} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[20%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track B (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={['URSA-219', 'URSA-220', 'URSA-251', 'URSA-224', 'URSA-231']} />
                                                 </td>
-                                                <td className="p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[20%]">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track C (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={['URSA-266', 'URSA-267', 'URSA-268', 'URSA-269']} />
                                                 </td>
                                             </tr>
@@ -190,8 +216,10 @@ export default function Schedule() {
 
             {/* ================= DAY 2 TABLE ================= */}
             {activeDay === 2 && (
-                <div className="overflow-x-auto border border-slate-400 rounded-md bg-white shadow-sm">
-                    <table className="w-full border-collapse min-w-[1000px]">
+                // Removed overflow-x-auto
+                <div className="border border-slate-400 rounded-md bg-white shadow-sm">
+                    {/* Removed min-w-[1000px] */}
+                    <table className="w-full border-collapse">
                         <thead>
                             <tr className="bg-slate-200 text-slate-800">
                                 <th className="border border-slate-400 p-3 w-32 text-center">Time</th>
@@ -216,17 +244,19 @@ export default function Schedule() {
                                 <td className="border border-slate-400 p-3 font-bold text-center bg-slate-50 align-top">11:30 - 13:30</td>
                                 <td className="p-0 border border-slate-400">
                                     <table className="w-full h-full">
-                                        <thead>
+                                        <thead className="hidden md:table-header-group">
                                             <tr className="bg-slate-100 text-sm">
-                                                {/* Offline First, Wider Width (40%) */}
                                                 <th className="border-r border-b border-slate-300 p-2 w-[40%] bg-orange-50 text-slate-900">Offline Session (Visvesvaraya Hall)</th>
                                                 <th className="border-r border-b border-slate-300 p-2 w-[30%] bg-blue-50 text-slate-700">Track A (Online)</th>
                                                 <th className="border-b border-slate-300 p-2 w-[30%] bg-blue-50 text-slate-700">Track B (Online)</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="border-r border-slate-300 p-3 align-top bg-orange-50/20">
+                                        <tbody className="flex flex-col md:table-row-group">
+                                            <tr className="flex flex-col md:table-row">
+                                                <td className="p-3 align-top bg-orange-50/20 w-full md:w-[40%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-900">Offline Session (Visvesvaraya Hall)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-201: Shubhraj Sharma',
                                                         'URSA-106: Rashika',
@@ -234,10 +264,12 @@ export default function Schedule() {
                                                         'URSA-193: Archi Kumari',
                                                         'URSA-194: Lipika Pandey',
                                                         'URSA-276: Shubham Meena',
-                                                        
                                                     ]} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[30%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track A (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-138',
                                                         'URSA-173',
@@ -247,7 +279,10 @@ export default function Schedule() {
                                                         'URSA-189'
                                                     ]} />
                                                 </td>
-                                                <td className="p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[30%]">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track B (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-232',
                                                         'URSA-233',
@@ -255,7 +290,6 @@ export default function Schedule() {
                                                         'URSA-242',
                                                         'URSA-243',
                                                         'URSA-245',
-                                                        
                                                     ]} />
                                                 </td>
                                             </tr>
@@ -286,16 +320,19 @@ export default function Schedule() {
                                 <td className="border border-slate-400 p-3 font-bold text-center bg-slate-50 align-top">15:45 - 17:00</td>
                                 <td className="p-0 border border-slate-400">
                                     <table className="w-full h-full">
-                                        <thead>
+                                        <thead className="hidden md:table-header-group">
                                             <tr className="bg-slate-100 text-sm">
                                                 <th className="border-r border-b border-slate-300 p-2 w-[40%] bg-orange-50 text-slate-900">Offline Session (Visvesvaraya Hall)</th>
                                                 <th className="border-r border-b border-slate-300 p-2 w-[30%] bg-blue-50 text-slate-700">Track A (Online)</th>
                                                 <th className="border-b border-slate-300 p-2 w-[30%] bg-blue-50 text-slate-700">Track B (Online)</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="border-r border-slate-300 p-3 align-top bg-orange-50/20">
+                                        <tbody className="flex flex-col md:table-row-group">
+                                            <tr className="flex flex-col md:table-row">
+                                                <td className="p-3 align-top bg-orange-50/20 w-full md:w-[40%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-900">Offline Session (Visvesvaraya Hall)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-205: Kundan Kunal',
                                                         'URSA-214: Neeraj Patel',
@@ -306,7 +343,10 @@ export default function Schedule() {
                                                         'URSA-275: Anushri Barman'
                                                     ]} />
                                                 </td>
-                                                <td className="border-r border-slate-300 p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[30%] md:border-r border-b border-slate-300 md:border-b-0">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track A (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-190',
                                                         'URSA-191',
@@ -317,7 +357,10 @@ export default function Schedule() {
                                                         'URSA-204',
                                                     ]} />
                                                 </td>
-                                                <td className="p-3 align-top">
+                                                <td className="p-3 align-top w-full md:w-[30%]">
+                                                    <div className="md:hidden pb-2 mb-2 border-b border-slate-300">
+                                                        <h3 className="font-semibold text-slate-700">Track B (Online)</h3>
+                                                    </div>
                                                     <PaperList papers={[
                                                         'URSA-246',
                                                         'URSA-247',
